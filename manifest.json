@@ -1,7 +1,8 @@
 {
   "name": "Coffee Shop Debt Manager",
   "short_name": "CoffeeDebt",
-  "start_url": "/",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#f5f0e6",
   "theme_color": "#4a2c2a",

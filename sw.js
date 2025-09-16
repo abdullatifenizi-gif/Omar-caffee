@@ -1,15 +1,18 @@
-const CACHE_NAME = 'coffee-debt-manager-v1';
+const CACHE_NAME = 'coffee-debt-manager-v2';
 const URLS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/index.tsx',
-  '/App.tsx',
-  '/types.ts',
-  '/hooks/useLocalStorage.ts',
-  '/components/Header.tsx',
-  '/components/Dashboard.tsx',
-  '/components/CustomerDetail.tsx',
-  '/components/ProductManager.tsx',
+  './',
+  './index.html',
+  './index.tsx',
+  './App.tsx',
+  './types.ts',
+  './hooks/useLocalStorage.ts',
+  './components/Header.tsx',
+  './components/Dashboard.tsx',
+  './components/CustomerDetail.tsx',
+  './components/ProductManager.tsx',
+  './manifest.json',
+  './icon-192.png',
+  './icon-512.png',
   'https://cdn.tailwindcss.com'
 ];
 
