@@ -1,0 +1,21 @@
+{
+  "name": "Coffee Shop Debt Manager",
+  "short_name": "CoffeeDebt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f0e6",
+  "theme_color": "#4a2c2a",
+  "description": "A web application to help small coffee shops manage customer debts.",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Coffee Shop Debt Manager",
+  "description": "A web application to help small coffee shops manage customer debts. Track customers, products, transactions, and view reports on total debts and payments.",
+  "requestFramePermissions": []
+}
