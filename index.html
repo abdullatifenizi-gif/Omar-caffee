@@ -2,43 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="./icon-192.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/icon-192.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Coffee Shop Debt Manager</title>
     
     <!-- PWA enhancements -->
-    <link rel="manifest" href="./manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#4a2c2a" />
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'brand-primary': '#4a2c2a',
-              'brand-secondary': '#c7a17a',
-              'brand-background': '#f5f0e6',
-              'brand-surface': '#ffffff',
-              'brand-text': '#333333',
-              'brand-accent': '#8d6e63',
-            },
-          }
-        }
-      }
-    </script>
+    <style>
+      /* Simple CSS reset */
+      body, #root { margin: 0; padding: 0; font-family: sans-serif; }
+    </style>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
     "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.0.2",
+    "@capacitor/cli": "https://aistudiocdn.com/@capacitor/cli@^7.4.3",
+    "vite": "https://aistudiocdn.com/vite@^7.1.5"
   }
 }
 </script>
 </head>
   <body class="bg-brand-background">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/src/index.tsx"></script>
   </body>
 </html>

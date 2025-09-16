@@ -1,0 +1,12 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  body {
+    background-color: #f5f0e6;
+    color: #333333;
+  }
+}
+
+/* We will configure tailwind to use these colors */
