@@ -1,5 +1,6 @@
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Customer, Product, Transaction, View } from './types';
 import { useLocalStorage } from './hooks/useLocalStorage';
 import Header from './components/Header';
@@ -8,12 +9,18 @@ import CustomerDetail from './components/CustomerDetail';
 import ProductManager from './components/ProductManager';
 
 const App: React.FC = () => {
+  const { i18n } = useTranslation();
   const [customers, setCustomers] = useLocalStorage<Customer[]>('customers', []);
   const [products, setProducts] = useLocalStorage<Product[]>('products', []);
   
   const [currentView, setCurrentView] = useState<View>(View.DASHBOARD);
   const [selectedCustomerId, setSelectedCustomerId] = useState<string | null>(null);
   const [isProductManagerOpen, setProductManagerOpen] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+    document.documentElement.dir = i18n.language === 'ar' ? 'rtl' : 'ltr';
+  }, [i18n.language]);
 
   const handleAddCustomer = (customer: Omit<Customer, 'id' | 'balance'>) => {
     const newCustomer: Customer = { 

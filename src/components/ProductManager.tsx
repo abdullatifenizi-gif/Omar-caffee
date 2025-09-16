@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Product } from '../types';
 
 interface ProductManagerProps {
@@ -9,6 +10,7 @@ interface ProductManagerProps {
 }
 
 const ProductManager: React.FC<ProductManagerProps> = ({ products, setProducts, onClose }) => {
+  const { t } = useTranslation();
   const [newProductName, setNewProductName] = useState('');
   const [newProductPrice, setNewProductPrice] = useState('');
 
@@ -35,8 +37,8 @@ const ProductManager: React.FC<ProductManagerProps> = ({ products, setProducts, 
       <div className="bg-brand-surface rounded-lg shadow-xl w-full max-w-md max-h-[90vh] flex flex-col">
         <div className="p-6 border-b">
             <div className="flex justify-between items-center">
-                <h2 className="text-2xl font-bold text-brand-primary">Manage Products</h2>
-                <button onClick={onClose} className="text-gray-400 hover:text-gray-600">&times;</button>
+                <h2 className="text-2xl font-bold text-brand-primary">{t('productManager.title')}</h2>
+                <button onClick={onClose} className="text-gray-400 hover:text-gray-600 text-3xl leading-none">&times;</button>
             </div>
         </div>
         
@@ -44,30 +46,30 @@ const ProductManager: React.FC<ProductManagerProps> = ({ products, setProducts, 
             {/* Add Product Form */}
             <div className="flex items-end gap-2 p-4 border rounded-lg">
               <div className="flex-grow">
-                <label className="block text-sm font-medium text-gray-700">Product Name</label>
+                <label className="block text-sm font-medium text-gray-700">{t('productManager.productName')}</label>
                 <input
                   type="text"
                   value={newProductName}
                   onChange={(e) => setNewProductName(e.target.value)}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-accent focus:border-brand-accent sm:text-sm"
-                  placeholder="e.g., Cappuccino"
+                  placeholder={t('productManager.productNamePlaceholder')}
                 />
               </div>
               <div className="w-28">
-                <label className="block text-sm font-medium text-gray-700">Price</label>
+                <label className="block text-sm font-medium text-gray-700">{t('productManager.price')}</label>
                 <input
                   type="number"
                   value={newProductPrice}
                   onChange={(e) => setNewProductPrice(e.target.value)}
                   className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-accent focus:border-brand-accent sm:text-sm"
-                  placeholder="4.50"
+                  placeholder={t('productManager.pricePlaceholder')}
                 />
               </div>
               <button
                 onClick={handleAddProduct}
                 className="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-brand-primary hover:bg-brand-accent"
               >
-                Add
+                {t('productManager.add')}
               </button>
             </div>
 
@@ -83,21 +85,21 @@ const ProductManager: React.FC<ProductManagerProps> = ({ products, setProducts, 
                             onClick={() => handleDeleteProduct(product.id)}
                             className="text-red-500 hover:text-red-700 font-semibold"
                         >
-                            Delete
+                            {t('productManager.delete')}
                         </button>
                     </div>
                 )) : (
-                    <p className="text-center text-gray-500 py-4">No products added yet.</p>
+                    <p className="text-center text-gray-500 py-4">{t('productManager.noProducts')}</p>
                 )}
             </div>
         </div>
 
-         <div className="p-4 bg-gray-50 border-t text-right">
+         <div className="p-4 bg-gray-50 border-t text-end">
             <button
                 onClick={onClose}
                 className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100"
             >
-                Close
+                {t('productManager.close')}
             </button>
          </div>
 

@@ -1,0 +1,54 @@
+{
+  "header": {
+    "title": "☕ مدير ديون المقهى",
+    "manageProducts": "إدارة المنتجات",
+    "language": "اللغة"
+  },
+  "dashboard": {
+    "totalOutstanding": "إجمالي الديون المستحقة",
+    "totalDebt": "إجمالي الديون المسجلة",
+    "totalPayments": "إجمالي المدفوعات المستلمة",
+    "customers": "العملاء",
+    "addCustomer": "إضافة عميل",
+    "searchPlaceholder": "ابحث بالاسم أو رقم الهاتف...",
+    "noCustomersFound": "لم يتم العثور على عملاء. أضف واحداً للبدء أو قم بتعديل بحثك."
+  },
+  "customerList": {
+    "currentBalance": "الرصيد الحالي"
+  },
+  "customerForm": {
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "notes": "ملاحظات",
+    "cancel": "إلغاء",
+    "addCustomer": "إضافة عميل"
+  },
+  "customerDetail": {
+    "backToDashboard": "→ العودة إلى لوحة التحكم",
+    "currentBalance": "الرصيد الحالي",
+    "newTransaction": "معاملة جديدة",
+    "transactionHistory": "سجل المعاملات",
+    "noTransactions": "لا توجد معاملات بعد."
+  },
+  "transactionForm": {
+    "productOrCustom": "منتج أو مبلغ مخصص",
+    "selectProduct": "اختر منتجاً...",
+    "customAmount": "مبلغ مخصص",
+    "customAmountLabel": "المبلغ المخصص ($)",
+    "description": "الوصف (اختياري)",
+    "descriptionPlaceholder": "مثال: لاتيه صباحي",
+    "recordPayment": "تسجيل دفعة",
+    "recordDebt": "تسجيل دين"
+  },
+  "productManager": {
+    "title": "إدارة المنتجات",
+    "productName": "اسم المنتج",
+    "productNamePlaceholder": "مثال: كابتشينو",
+    "price": "السعر",
+    "pricePlaceholder": "4.50",
+    "add": "إضافة",
+    "delete": "حذف",
+    "close": "إغلاق",
+    "noProducts": "لم تتم إضافة أي منتجات بعد."
+  }
+}

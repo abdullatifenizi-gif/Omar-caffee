@@ -1,0 +1,54 @@
+{
+  "header": {
+    "title": "☕ Coffee Debt Manager",
+    "manageProducts": "Manage Products",
+    "language": "Language"
+  },
+  "dashboard": {
+    "totalOutstanding": "Total Outstanding Debt",
+    "totalDebt": "Total Debt Recorded",
+    "totalPayments": "Total Payments Received",
+    "customers": "Customers",
+    "addCustomer": "Add Customer",
+    "searchPlaceholder": "Search by name or phone...",
+    "noCustomersFound": "No customers found. Add one to get started or adjust your search."
+  },
+  "customerList": {
+    "currentBalance": "Current Balance"
+  },
+  "customerForm": {
+    "name": "Name",
+    "phone": "Phone",
+    "notes": "Notes",
+    "cancel": "Cancel",
+    "addCustomer": "Add Customer"
+  },
+  "customerDetail": {
+    "backToDashboard": "← Back to Dashboard",
+    "currentBalance": "Current Balance",
+    "newTransaction": "New Transaction",
+    "transactionHistory": "Transaction History",
+    "noTransactions": "No transactions yet."
+  },
+  "transactionForm": {
+    "productOrCustom": "Product or Custom Amount",
+    "selectProduct": "Select a product...",
+    "customAmount": "Custom Amount",
+    "customAmountLabel": "Custom Amount ($)",
+    "description": "Description (Optional)",
+    "descriptionPlaceholder": "e.g., Morning Latte",
+    "recordPayment": "Record Payment",
+    "recordDebt": "Record Debt"
+  },
+  "productManager": {
+    "title": "Manage Products",
+    "productName": "Product Name",
+    "productNamePlaceholder": "e.g., Cappuccino",
+    "price": "Price",
+    "pricePlaceholder": "4.50",
+    "add": "Add",
+    "delete": "Delete",
+    "close": "Close",
+    "noProducts": "No products added yet."
+  }
+}
